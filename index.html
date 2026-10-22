@@ -34,8 +34,8 @@
 <!-- Preconnect & font preload -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500&display=swap"></noscript>
 
 <!-- Schema.org Structured Data -->
 <script type="application/ld+json">
@@ -417,7 +417,11 @@ footer{background:var(--bg-dark);color:var(--white-text);padding:clamp(48px,6vw,
 <!-- HERO -->
 <section id="hero" aria-label="Apresentação ALM Soluções">
   <div class="hero-img" aria-hidden="true">
-    <img src="images/hero.jpg" alt="" width="1920" height="900" fetchpriority="high">
+    <picture>
+      <source srcset="images/hero-mobile.webp" media="(max-width:799px)" type="image/webp">
+      <source srcset="images/hero.webp" type="image/webp">
+      <img src="images/hero.jpg" alt="" width="1920" height="900" fetchpriority="high">
+    </picture>
   </div>
   <div class="hero-overlay" aria-hidden="true"></div>
   <div class="hero-grid" aria-hidden="true"></div>
@@ -559,7 +563,10 @@ footer{background:var(--bg-dark);color:var(--white-text);padding:clamp(48px,6vw,
       <div class="photo-frame">
         <div class="photo-border" aria-hidden="true"></div>
         <div class="photo-inner">
-          <img src="images/about.jpg" alt="Mecânico especialista em usinagem de motores — ALM Soluções" width="600" height="800" loading="lazy">
+          <picture>
+            <source srcset="images/about.webp" type="image/webp">
+            <img src="images/about.jpg" alt="Mecânico especialista em usinagem de motores — ALM Soluções" width="600" height="800" loading="lazy">
+          </picture>
         </div>
       </div>
     </div>
@@ -695,14 +702,14 @@ const WA='https://wa.me/5515996566562';
 
 // ─── SERVICES DATA ───────────────────────────────────────
 const SERVICOS=[
-  ['Recuperação de Bloco de Alumínio','Recuperamos blocos de alumínio danificados com soldagem e usinagem especializada, devolvendo as medidas originais de fábrica.','images/services/s01.jpg'],
-  ['Recuperação de Bloco de Ferro Fundido','Restauração completa de blocos de ferro fundido com técnicas de alta precisão e garantia de qualidade.','images/services/s02.jpg'],
-  ['Torneamento de Pistão','Usinagem de taxa de pistões com tolerâncias precisas para perfeita vedação e funcionamento do motor.','images/services/s03.jpg'],
-  ['Embuchamento de Rosca de Blocos','Bucha roscada em aço 1045 — reparo definitivo de roscas danificadas em blocos de motor.','images/services/s04.jpg'],
-  ['Soldas Especializadas','Soldagem de recuperação em blocos de alumínio, ferro fundido e cabeçotes com equipamentos profissionais.','images/services/s05.jpg'],
-  ['Rolagem de Eixos','Restauração geométrica e dimensional de eixos e virabrequins com alta precisão.','images/services/s06.jpg'],
-  ['Selos de Alumínio','Fabricação e instalação de selos de alumínio e arruelas de cabeçote sob medida.','images/services/s07.jpg'],
-  ['Adaptações Gerais','Canal mosca de biela, arruelas de cabeçote e adaptações técnicas personalizadas para qualquer necessidade.','images/services/s08.jpg'],
+  ['Recuperação de Bloco de Alumínio','Recuperamos blocos de alumínio danificados com soldagem e usinagem especializada, devolvendo as medidas originais de fábrica.','images/services/s01.webp'],
+  ['Recuperação de Bloco de Ferro Fundido','Restauração completa de blocos de ferro fundido com técnicas de alta precisão e garantia de qualidade.','images/services/s02.webp'],
+  ['Torneamento de Pistão','Usinagem de taxa de pistões com tolerâncias precisas para perfeita vedação e funcionamento do motor.','images/services/s03.webp'],
+  ['Embuchamento de Rosca de Blocos','Bucha roscada em aço 1045 — reparo definitivo de roscas danificadas em blocos de motor.','images/services/s04.webp'],
+  ['Soldas Especializadas','Soldagem de recuperação em blocos de alumínio, ferro fundido e cabeçotes com equipamentos profissionais.','images/services/s05.webp'],
+  ['Rolagem de Eixos','Restauração geométrica e dimensional de eixos e virabrequins com alta precisão.','images/services/s06.webp'],
+  ['Selos de Alumínio','Fabricação e instalação de selos de alumínio e arruelas de cabeçote sob medida.','images/services/s07.webp'],
+  ['Adaptações Gerais','Canal mosca de biela, arruelas de cabeçote e adaptações técnicas personalizadas para qualquer necessidade.','images/services/s08.webp'],
 ];
 
 const ICONS=[
@@ -742,14 +749,14 @@ SERVICOS.forEach(([title,desc,img],i)=>{
 
 // ─── WORKS CAROUSEL ──────────────────────────────────────
 const TRABALHOS=[
-  ['Recuperação de Bloco','Toyota Hilux','images/works/w01.jpg'],
-  ['Torneamento de Pistão','BMW X5','images/works/w02.jpg'],
-  ['Embuchamento de Rosca','Mercedes Sprinter 415','images/works/w03.jpg'],
-  ['Soldas Especializadas','Land Rover Discovery','images/works/w04.jpg'],
-  ['Rolagem de Eixos','VW Amarok','images/works/w05.jpg'],
-  ['Selos de Alumínio','Jeep Compass','images/works/w06.jpg'],
-  ['Recuperação de Bloco de Ferro','Chevrolet S10','images/works/w07.jpg'],
-  ['Adaptações Gerais','Ford Ranger','images/works/w08.jpg'],
+  ['Recuperação de Bloco','Toyota Hilux','images/works/w01.webp'],
+  ['Torneamento de Pistão','BMW X5','images/works/w02.webp'],
+  ['Embuchamento de Rosca','Mercedes Sprinter 415','images/works/w03.webp'],
+  ['Soldas Especializadas','Land Rover Discovery','images/works/w04.webp'],
+  ['Rolagem de Eixos','VW Amarok','images/works/w05.webp'],
+  ['Selos de Alumínio','Jeep Compass','images/works/w06.webp'],
+  ['Recuperação de Bloco de Ferro','Chevrolet S10','images/works/w07.webp'],
+  ['Adaptações Gerais','Ford Ranger','images/works/w08.webp'],
 ];
 
 const track=document.getElementById('track');
@@ -840,9 +847,7 @@ document.querySelectorAll('.menu-link').forEach(a=>a.addEventListener('click',()
 
 // ─── MARCAS ──────────────────────────────────────────────
 (function(){
-  var C='1c1f22'; // icon color (hex, no #) — matches --fg
-  var SI='https://cdn.simpleicons.org/';
-  // [slug, display name, name style]
+  var SI='images/brands/';
   var LOGOS=[
     ['bmw',          'BMW',          'font-weight:900;font-size:14px;letter-spacing:4px'],
     ['mercedesbenz', 'Mercedes-Benz','font-weight:300;font-size:11px;letter-spacing:2.5px;text-transform:uppercase'],
@@ -862,7 +867,7 @@ document.querySelectorAll('.menu-link').forEach(a=>a.addEventListener('click',()
     [...LOGOS,...LOGOS].forEach(function(o){
       var d=document.createElement('div');
       d.className='mrc-logo';
-      d.innerHTML='<img src="'+SI+o[0]+'/'+C+'" alt="'+o[1]+'" loading="lazy" onerror="this.style.display=\'none\'">'
+      d.innerHTML='<img src="'+SI+o[0]+'.svg" alt="'+o[1]+'" loading="lazy" width="100" height="48">'
         +'<span class="nm" style="'+o[2]+'">'+o[1]+'</span>';
       track.appendChild(d);
     });

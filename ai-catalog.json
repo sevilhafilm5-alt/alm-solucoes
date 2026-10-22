@@ -1,0 +1,40 @@
+{
+  "schema_version": "v0",
+  "name_for_ai": "ALM Soluções Usinagens",
+  "name_for_human": "ALM Soluções Usinagens",
+  "description_for_ai": "Brazilian machining and motor reconditioning service provider. Specializes in aluminum and cast iron engine block recovery, piston turning, thread bush repair, specialized welding, axle rolling, and aluminum seals. Serves automotive repair shops across Brazil from Votorantim, SP.",
+  "description_for_human": "Especialistas em usinagem para retíficas de motores — recuperação de bloco, torneamento de pistão, soldas especializadas e mais. Atendemos todo o Brasil.",
+  "legal_info_url": "https://almusinagem.com.br",
+  "contact": {
+    "email": "Suporte.almusinagem@gmail.com",
+    "phone": "+55 15 99656-6562",
+    "whatsapp": "https://wa.me/5515996566562"
+  },
+  "location": {
+    "country": "BR",
+    "state": "SP",
+    "city": "Votorantim",
+    "address": "Estr. Oswaldo Pires de Camargo, 523, Capoavinha, Votorantim – SP, 18117-803"
+  },
+  "api": {
+    "type": "none"
+  },
+  "auth": {
+    "type": "none"
+  },
+  "capabilities": [
+    "quote_request",
+    "service_inquiry",
+    "contact"
+  ],
+  "services": [
+    "Recuperação de Bloco de Alumínio",
+    "Recuperação de Bloco de Ferro Fundido",
+    "Torneamento de Pistão",
+    "Embuchamento de Rosca de Blocos",
+    "Soldas Especializadas",
+    "Rolagem de Eixos",
+    "Selos de Alumínio",
+    "Adaptações Gerais"
+  ]
+}
