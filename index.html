@@ -5,10 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ALM Soluções Usinagens | Retífica de Motores — Votorantim SP</title>
 <meta name="description" content="Especialistas em usinagem para retíficas de motores: recuperação de bloco, torneamento de pistão, soldas especializadas, embuchamento e rolagem de eixos. Atendemos todo o Brasil com rapidez e qualidade. Votorantim – SP.">
-<meta name="keywords" content="usinagem para retífica, recuperação de bloco, torneamento de pistão, embuchamento de rosca, soldas especializadas, rolagem de eixos, selos de alumínio, retífica de motor, Votorantim SP, usinagem automotiva">
+<meta name="keywords" content="usinagem para retífica, usinagem para retífica de motores, recuperação de bloco de alumínio, recuperação de bloco de ferro fundido, torneamento de pistão, embuchamento de rosca bloco motor, soldas especializadas motor, rolagem de eixos, rolagem de virabrequim, selos de alumínio motor, arruelas de cabeçote, canal mosca de biela, retífica de motor, retífica de motor SP, usinagem automotiva, usinagem motor Votorantim, usinagem Votorantim SP, serviços usinagem para retífica, recuperação de motor, recondicionamento de motor, bloco motor alumínio trincado, bucha roscada aço 1045, solda bloco motor">
 <meta name="author" content="ALM Soluções Usinagens">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <link rel="canonical" href="https://almusinagem.com.br/">
+<link rel="alternate" hreflang="pt-BR" href="https://almusinagem.com.br/">
+<link rel="alternate" hreflang="x-default" href="https://almusinagem.com.br/">
+<link rel="sitemap" type="application/xml" href="https://almusinagem.com.br/sitemap.xml">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
@@ -43,16 +46,16 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["AutoRepair","LocalBusiness"],
+      "@type": ["AutoRepair","LocalBusiness","ProfessionalService"],
       "@id": "https://almusinagem.com.br/#business",
       "name": "ALM Soluções Usinagens",
-      "alternateName": "ALM Soluções",
-      "description": "Especialistas em usinagem para retíficas de motores. Recuperação de bloco de alumínio e ferro fundido, torneamento de pistão, embuchamento de rosca, soldas especializadas, rolagem de eixos, selos de alumínio e adaptações gerais. Atendemos todo o Brasil.",
+      "alternateName": ["ALM Soluções","ALM Usinagens","ALM Retífica"],
+      "description": "Especialistas em usinagem para retíficas de motores há mais de 10 anos. Serviços: recuperação de bloco de alumínio e ferro fundido, torneamento de pistão, embuchamento de rosca de blocos, soldas especializadas em alumínio e ferro fundido, rolagem de eixos e virabrequins, selos de alumínio, arruelas de cabeçote e adaptações gerais. Atendemos retíficas em todo o Brasil com agilidade e qualidade garantida.",
       "url": "https://almusinagem.com.br",
       "telephone": "+5515996566562",
       "email": "Suporte.almusinagem@gmail.com",
-      "logo": "https://almusinagem.com.br/images/hero.jpg",
-      "image": ["https://almusinagem.com.br/images/hero.jpg"],
+      "logo": {"@type":"ImageObject","url":"https://almusinagem.com.br/images/hero.jpg","width":1920,"height":900},
+      "image": ["https://almusinagem.com.br/images/hero.jpg","https://almusinagem.com.br/images/about.jpg"],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Estr. Oswaldo Pires de Camargo, 523 - Capoavinha",
@@ -66,67 +69,302 @@
         "latitude": "-23.5482",
         "longitude": "-47.4412"
       },
-      "areaServed": {"@type": "Country", "name": "Brasil"},
+      "areaServed": [
+        {"@type":"Country","name":"Brasil"},
+        {"@type":"State","name":"São Paulo"},
+        {"@type":"State","name":"Paraná"},
+        {"@type":"State","name":"Minas Gerais"},
+        {"@type":"State","name":"Rio de Janeiro"},
+        {"@type":"State","name":"Mato Grosso do Sul"},
+        {"@type":"State","name":"Santa Catarina"},
+        {"@type":"State","name":"Rio Grande do Sul"},
+        {"@type":"State","name":"Goiás"},
+        {"@type":"State","name":"Bahia"},
+        {"@type":"State","name":"Pernambuco"},
+        {"@type":"State","name":"Ceará"},
+        {"@type":"State","name":"Amazonas"},
+        {"@type":"State","name":"Pará"},
+        {"@type":"State","name":"Distrito Federal"}
+      ],
+      "serviceArea": {
+        "@type": "AdministrativeArea",
+        "name": "Brasil",
+        "containsPlace": [
+          {"@type":"City","name":"Votorantim","containedInPlace":{"@type":"State","name":"São Paulo"}},
+          {"@type":"City","name":"Sorocaba","containedInPlace":{"@type":"State","name":"São Paulo"}},
+          {"@type":"City","name":"Itu","containedInPlace":{"@type":"State","name":"São Paulo"}},
+          {"@type":"City","name":"Campinas","containedInPlace":{"@type":"State","name":"São Paulo"}},
+          {"@type":"City","name":"São Paulo","containedInPlace":{"@type":"State","name":"São Paulo"}},
+          {"@type":"City","name":"Curitiba","containedInPlace":{"@type":"State","name":"Paraná"}},
+          {"@type":"City","name":"Belo Horizonte","containedInPlace":{"@type":"State","name":"Minas Gerais"}}
+        ]
+      },
       "priceRange": "$$",
-      "sameAs": ["https://www.instagram.com/almusinagem"],
+      "currenciesAccepted": "BRL",
+      "paymentAccepted": "Cash, Credit Card, PIX, Boleto Bancário, Transferência Bancária",
+      "sameAs": [
+        "https://www.instagram.com/almusinagem",
+        "https://wa.me/5515996566562"
+      ],
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+5515996566562",
         "contactType": "customer service",
         "availableLanguage": "Portuguese",
-        "contactOption": "TollFree"
+        "contactOption": "TollFree",
+        "hoursAvailable": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
       },
+      "knowsAbout": [
+        "usinagem para retífica de motores",
+        "usinagem automotiva",
+        "usinagem de precisão",
+        "recuperação de bloco de motor",
+        "recuperação de bloco de alumínio",
+        "recuperação de bloco de ferro fundido",
+        "torneamento de pistão",
+        "usinagem de taxa de pistão",
+        "embuchamento de rosca de bloco",
+        "bucha roscada em aço 1045",
+        "reparo de rosca danificada em bloco de motor",
+        "soldagem de bloco de alumínio",
+        "soldagem de bloco de ferro fundido",
+        "soldagem de cabeçote",
+        "rolagem de eixo",
+        "rolagem de virabrequim",
+        "restauração geométrica de eixos",
+        "selos de alumínio para motor",
+        "arruelas de cabeçote sob medida",
+        "adaptações de biela",
+        "canal mosca de biela",
+        "retífica de motores automotivos",
+        "mecânica de motores",
+        "manutenção de motores de combustão interna",
+        "recuperação de motor a diesel",
+        "usinagem de motor a gasolina",
+        "usinagem industrial",
+        "serviços para retífica",
+        "fornecedor de usinagem para retífica",
+        "terceirização de usinagem"
+      ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Serviços de Usinagem para Retíficas",
+        "name": "Serviços de Usinagem para Retíficas de Motores",
         "itemListElement": [
-          {"@type": "Offer","itemOffered": {"@type": "Service","name": "Recuperação de Bloco de Alumínio","description": "Recuperamos blocos de alumínio danificados com soldagem e usinagem especializada."}},
-          {"@type": "Offer","itemOffered": {"@type": "Service","name": "Recuperação de Bloco de Ferro Fundido","description": "Restauração completa de blocos de ferro fundido com técnicas de alta precisão."}},
-          {"@type": "Offer","itemOffered": {"@type": "Service","name": "Torneamento de Pistão","description": "Usinagem de taxa de pistões com tolerâncias precisas."}},
-          {"@type": "Offer","itemOffered": {"@type": "Service","name": "Embuchamento de Rosca de Blocos","description": "Bucha roscada em aço 1045 para reparo definitivo de roscas danificadas."}},
-          {"@type": "Offer","itemOffered": {"@type": "Service","name": "Soldas Especializadas","description": "Soldagem de recuperação em blocos de alumínio, ferro fundido e cabeçotes."}},
-          {"@type": "Offer","itemOffered": {"@type": "Service","name": "Rolagem de Eixos","description": "Restauração geométrica e dimensional de eixos e virabrequins."}},
-          {"@type": "Offer","itemOffered": {"@type": "Service","name": "Selos de Alumínio","description": "Fabricação e instalação de selos de alumínio e arruelas sob medida."}},
-          {"@type": "Offer","itemOffered": {"@type": "Service","name": "Adaptações Gerais","description": "Canal mosca de biela, arruelas de cabeçote e adaptações técnicas personalizadas."}}
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://almusinagem.com.br/#s-bloco-aluminio",
+              "name": "Recuperação de Bloco de Alumínio",
+              "description": "Recuperação de blocos de motor em alumínio com trinca, quebra ou desgaste. Realizamos soldagem especializada TIG/MIG em alumínio e usinagem de precisão para devolver as medidas originais de fábrica. Atendemos blocos de motores de automóveis, utilitários e caminhões.",
+              "keywords": "recuperação bloco alumínio, solda bloco alumínio, usinagem bloco alumínio, bloco motor alumínio trincado",
+              "provider": {"@id": "https://almusinagem.com.br/#business"}
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://almusinagem.com.br/#s-bloco-ferro",
+              "name": "Recuperação de Bloco de Ferro Fundido",
+              "description": "Restauração completa de blocos de motor em ferro fundido. Técnicas de alta precisão para recuperar blocos trincados, quebrados ou com desgaste excessivo. Garantia de medidas originais de fábrica em todos os serviços.",
+              "keywords": "recuperação bloco ferro fundido, solda ferro fundido, usinagem bloco ferro fundido",
+              "provider": {"@id": "https://almusinagem.com.br/#business"}
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://almusinagem.com.br/#s-pistao",
+              "name": "Torneamento de Pistão",
+              "description": "Usinagem de taxa de pistões com tolerâncias mínimas de precisão. Serviço de torneamento para retífica de pistões de motores a gasolina, álcool, flex e diesel. Mantemos as dimensões originais do fabricante para perfeita vedação e funcionamento do motor.",
+              "keywords": "torneamento de pistão, usinagem de pistão, taxa de pistão, pistão retificado",
+              "provider": {"@id": "https://almusinagem.com.br/#business"}
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://almusinagem.com.br/#s-embuchamento",
+              "name": "Embuchamento de Rosca de Blocos",
+              "description": "Reparo definitivo de roscas danificadas, arrancadas ou cruzadas em blocos de motor. Instalamos buchas roscadas em aço 1045 com resistência superior ao material original. Solução permanente para roscas de parafusos de cabeçote, cárter, tampas e outros componentes.",
+              "keywords": "embuchamento de rosca, bucha roscada bloco, reparo rosca bloco motor, rosca danificada bloco, bucha de rosca aço 1045",
+              "provider": {"@id": "https://almusinagem.com.br/#business"}
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://almusinagem.com.br/#s-soldas",
+              "name": "Soldas Especializadas em Blocos e Cabeçotes",
+              "description": "Soldagem de recuperação em blocos de alumínio, ferro fundido e cabeçotes. Utilizamos equipamentos profissionais de solda TIG, MIG e eletrodo revestido. Atendemos trincas, quebras, furos e desgastes em qualquer região do bloco ou cabeçote.",
+              "keywords": "solda bloco motor, solda cabeçote, soldagem alumínio motor, solda ferro fundido, recuperação bloco solda",
+              "provider": {"@id": "https://almusinagem.com.br/#business"}
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://almusinagem.com.br/#s-rolagem",
+              "name": "Rolagem de Eixos e Virabrequins",
+              "description": "Restauração geométrica e dimensional de eixos e virabrequins. Processo de rolamento para recuperar a dureza e rugosidade superficial dos munhões do virabrequim, prolongando a vida útil do motor e eliminando o desgaste excessivo.",
+              "keywords": "rolagem de eixo, rolagem de virabrequim, usinagem virabrequim, recuperação de eixo motor",
+              "provider": {"@id": "https://almusinagem.com.br/#business"}
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://almusinagem.com.br/#s-selos",
+              "name": "Selos de Alumínio e Arruelas de Cabeçote",
+              "description": "Fabricação e instalação de selos de alumínio e arruelas de cabeçote sob medida. Produzimos peças personalizadas em alumínio para vedação de motores. Solução para motores que não têm mais peças disponíveis no mercado ou para adaptações específicas.",
+              "keywords": "selos de alumínio motor, arruelas de cabeçote, selos sob medida, vedação motor alumínio",
+              "provider": {"@id": "https://almusinagem.com.br/#business"}
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://almusinagem.com.br/#s-adaptacoes",
+              "name": "Adaptações Gerais e Canal Mosca de Biela",
+              "description": "Adaptações técnicas personalizadas para retíficas: canal mosca de biela, arruelas de cabeçote especiais e adaptações mecânicas diversas. Atendemos demandas específicas que exigem soluções de usinagem personalizadas para cada motor.",
+              "keywords": "canal mosca de biela, adaptações de motor, usinagem personalizada, biela motor adaptação",
+              "provider": {"@id": "https://almusinagem.com.br/#business"}
+            }
+          }
         ]
       }
     },
     {
+      "@type": "WebSite",
+      "@id": "https://almusinagem.com.br/#website",
+      "url": "https://almusinagem.com.br",
+      "name": "ALM Soluções Usinagens",
+      "description": "Especialistas em usinagem para retíficas de motores — todo o Brasil",
+      "publisher": {"@id": "https://almusinagem.com.br/#business"},
+      "inLanguage": "pt-BR",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://almusinagem.com.br/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
       "@type": "FAQPage",
+      "@id": "https://almusinagem.com.br/#faq",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Qual a cidade da ALM Soluções?",
-          "acceptedAnswer": {"@type": "Answer","text": "Estamos localizados em Votorantim – SP. Endereço: Estr. Oswaldo Pires de Camargo, 523 - Capoavinha, Votorantim - SP, 18117-803."}
+          "name": "O que é usinagem para retífica de motores?",
+          "acceptedAnswer": {"@type":"Answer","text":"Usinagem para retífica de motores é o conjunto de serviços de precisão que recuperam e restauram componentes do motor: blocos de alumínio e ferro fundido, pistões, eixos, virabrequins e cabeçotes. A ALM Soluções Usinagens é especialista exclusivamente nesse segmento, atendendo retíficas de motores em todo o Brasil há mais de 10 anos."}
         },
         {
           "@type": "Question",
-          "name": "A ALM atende todo o Brasil?",
-          "acceptedAnswer": {"@type": "Answer","text": "Sim. Atendemos e entregamos para todo o Brasil. Também aceitamos retirada na empresa. O frete e custos de entrega são definidos no processo do pedido."}
+          "name": "É possível recuperar um bloco de motor de alumínio trincado?",
+          "acceptedAnswer": {"@type":"Answer","text":"Sim. Na ALM Soluções Usinagens recuperamos blocos de alumínio com trincas, quebras e desgastes utilizando soldagem TIG/MIG especializada seguida de usinagem de precisão para restabelecer as medidas originais de fábrica. A maioria dos blocos danificados pode ser recuperada com custo significativamente menor do que a substituição."}
         },
         {
           "@type": "Question",
-          "name": "Qual o prazo de entrega dos serviços?",
-          "acceptedAnswer": {"@type": "Answer","text": "O prazo é variável conforme o serviço. Nossa equipe mantém contato constante durante o pedido, informando diariamente o andamento da entrega."}
+          "name": "Qual a diferença entre recuperar bloco de alumínio e bloco de ferro fundido?",
+          "acceptedAnswer": {"@type":"Answer","text":"O alumínio é mais leve e exige soldagem TIG com material específico e controle rígido de temperatura para evitar distorção. O ferro fundido aceita técnicas de soldagem diferentes (eletrodo revestido ou MIG com fio especial) e apresenta comportamento distinto ao resfriamento. A ALM trabalha com ambos os materiais com processos específicos para cada tipo."}
         },
         {
           "@type": "Question",
-          "name": "Quais marcas de carros a ALM atende?",
-          "acceptedAnswer": {"@type": "Answer","text": "Trabalhamos com quase todos os modelos e marcas de automóveis importados e nacionais: BMW, Mercedes, Audi, Toyota, VW, Ford, Fiat, Chevrolet e muitos outros."}
+          "name": "O que é torneamento de taxa de pistão?",
+          "acceptedAnswer": {"@type":"Answer","text":"Torneamento de taxa de pistão é a usinagem do pistão para aumentar ou reduzir a taxa de compressão do motor, ajustando a câmara de combustão ao topo do pistão. Na ALM realizamos este serviço com tornos de precisão, mantendo tolerâncias mínimas para garantir vedação perfeita e desempenho ideal do motor."}
         },
         {
           "@type": "Question",
-          "name": "Como solicitar um orçamento?",
-          "acceptedAnswer": {"@type": "Answer","text": "Entre em contato pelo WhatsApp (15) 99656-6562 com o modelo do veículo e a descrição do serviço. Nossa equipe retorna com a cotação rapidamente."}
+          "name": "O que é embuchamento de rosca em bloco de motor?",
+          "acceptedAnswer": {"@type":"Answer","text":"Embuchamento de rosca é o processo de reparo permanente de roscas danificadas, cruzadas ou arrancadas no bloco de motor. Na ALM instalamos buchas roscadas em aço 1045 — material de resistência superior ao ferro fundido e ao alumínio original — garantindo uma fixação mais resistente do que a rosca original de fábrica."}
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a diferença entre bucha de rosca em aço 1045 e o reparo convencional?",
+          "acceptedAnswer": {"@type":"Answer","text":"O reparo convencional (helicoil ou rosca sobredimensionada) é uma solução temporária. A bucha em aço 1045 é uma solução definitiva: maquinamos um furo sobredimensionado, instalamos uma bucha de aço 1045 com rosca interna no diâmetro original, e o resultado é mais resistente do que a rosca original de fábrica."}
+        },
+        {
+          "@type": "Question",
+          "name": "O que é rolagem de eixo de virabrequim?",
+          "acceptedAnswer": {"@type":"Answer","text":"Rolagem de eixo (ou rolamento de virabrequim) é o processo de encruamento superficial dos munhões do virabrequim usando rolos de pressão, que aumentam a dureza superficial e melhoram o acabamento geométrico. O resultado é um virabrequim com maior resistência ao desgaste e vibração, prolongando significativamente a vida útil do motor."}
+        },
+        {
+          "@type": "Question",
+          "name": "A ALM faz usinagem para motores a diesel?",
+          "acceptedAnswer": {"@type":"Answer","text":"Sim. A ALM Soluções Usinagens atende motores a diesel, gasolina, álcool e flex. Recuperamos blocos, pistões, eixos e cabeçotes de caminhões, utilitários, camionetes e automóveis de todas as marcas nacionais e importadas."}
+        },
+        {
+          "@type": "Question",
+          "name": "Quais marcas de veículos a ALM Soluções atende?",
+          "acceptedAnswer": {"@type":"Answer","text":"Atendemos praticamente todas as marcas: BMW, Mercedes-Benz, Audi, Toyota, Volkswagen, Jeep, Land Rover, Hyundai, Volvo, Porsche, Ford, Fiat, Chevrolet, Honda, Renault, Peugeot, Citroën, Kia, Nissan, Mitsubishi, Subaru, Suzuki, Chrysler, RAM, Iveco, Dodge e muitas outras marcas nacionais e importadas."}
+        },
+        {
+          "@type": "Question",
+          "name": "A ALM atende retíficas de todo o Brasil?",
+          "acceptedAnswer": {"@type":"Answer","text":"Sim. A ALM Soluções Usinagens está localizada em Votorantim – SP mas atende retíficas de motores em todo o Brasil. Aceitamos retirada presencial ou envio e recebimento via transportadoras parceiras. Já atendemos clientes em São Paulo, Paraná, Minas Gerais, Rio de Janeiro, Santa Catarina, Rio Grande do Sul, Goiás, Mato Grosso do Sul, Bahia, Pernambuco, Ceará e demais estados."}
+        },
+        {
+          "@type": "Question",
+          "name": "Como enviar peças para a ALM de outro estado?",
+          "acceptedAnswer": {"@type":"Answer","text":"O processo é simples: entre em contato pelo WhatsApp (15) 99656-6562, descreva o serviço necessário e receba a cotação. Aprovando, embale a peça adequadamente e envie via transportadora de sua preferência para nosso endereço em Votorantim-SP. Após o serviço, devolvemos a peça pelo mesmo canal ou pela transportadora indicada."}
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a garantia dos serviços da ALM Soluções Usinagens?",
+          "acceptedAnswer": {"@type":"Answer","text":"Todos os serviços realizados pela ALM Soluções Usinagens possuem garantia. O prazo específico varia conforme o tipo de serviço. Mantemos contato constante durante e após a entrega para garantir sua satisfação. Em caso de qualquer problema relacionado ao serviço prestado, analisamos e resolvemos sem custo adicional."}
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto tempo demora para recuperar um bloco de motor?",
+          "acceptedAnswer": {"@type":"Answer","text":"O prazo varia conforme o tipo e complexidade do serviço. Serviços simples como embuchamento de rosca podem ser concluídos em 1-2 dias. Recuperações complexas de bloco com soldagem e usinagem completa podem levar de 3 a 7 dias úteis. Nossa equipe mantém comunicação diária sobre o andamento de cada pedido."}
+        },
+        {
+          "@type": "Question",
+          "name": "O que é canal mosca de biela?",
+          "acceptedAnswer": {"@type":"Answer","text":"Canal mosca de biela é uma adaptação mecânica que consiste em usinar um canal ou fresagem especial no olhal da biela para melhorar a lubrificação do pino de pistão ou para adaptações específicas do motor. É um serviço de usinagem especializado que a ALM realiza com alta precisão."}
+        },
+        {
+          "@type": "Question",
+          "name": "Como solicitar orçamento para usinagem de retífica?",
+          "acceptedAnswer": {"@type":"Answer","text":"Entre em contato pelo WhatsApp (15) 99656-6562 ou pelo e-mail Suporte.almusinagem@gmail.com. Informe a marca e modelo do veículo, o componente (bloco, pistão, eixo, cabeçote) e descreva o problema ou serviço necessário. Respondemos rapidamente com a cotação e orientações para envio da peça."}
+        },
+        {
+          "@type": "Question",
+          "name": "A ALM Soluções faz selos de alumínio sob medida?",
+          "acceptedAnswer": {"@type":"Answer","text":"Sim. Fabricamos selos de alumínio e arruelas de cabeçote completamente sob medida. Este serviço é especialmente útil para motores com peças descontinuadas pelo fabricante, importados com peças de difícil acesso no Brasil, ou para aplicações que exigem especificações técnicas diferentes do padrão original."}
+        },
+        {
+          "@type": "Question",
+          "name": "A ALM trabalha com motores de caminhões e veículos pesados?",
+          "acceptedAnswer": {"@type":"Answer","text":"Sim. Além de automóveis e utilitários, atendemos caminhões e veículos pesados das principais marcas como Mercedes-Benz, Volkswagen, Ford, Iveco, Scania, MAN, DAF e outros. Nossos equipamentos de usinagem são dimensionados para peças de grande porte."}
         }
       ]
     },
     {
       "@type": "BreadcrumbList",
+      "@id": "https://almusinagem.com.br/#breadcrumb",
       "itemListElement": [
-        {"@type": "ListItem","position": 1,"name": "Início","item": "https://almusinagem.com.br/"},
-        {"@type": "ListItem","position": 2,"name": "Serviços","item": "https://almusinagem.com.br/#servicos"},
-        {"@type": "ListItem","position": 3,"name": "Contato","item": "https://almusinagem.com.br/#contato"}
+        {"@type":"ListItem","position":1,"name":"Início","item":"https://almusinagem.com.br/"},
+        {"@type":"ListItem","position":2,"name":"Serviços de Usinagem","item":"https://almusinagem.com.br/#servicos"},
+        {"@type":"ListItem","position":3,"name":"Marcas Atendidas","item":"https://almusinagem.com.br/#marcas"},
+        {"@type":"ListItem","position":4,"name":"Trabalhos Realizados","item":"https://almusinagem.com.br/#carros"},
+        {"@type":"ListItem","position":5,"name":"Quem Somos","item":"https://almusinagem.com.br/#quem-somos"},
+        {"@type":"ListItem","position":6,"name":"FAQ","item":"https://almusinagem.com.br/#faq"},
+        {"@type":"ListItem","position":7,"name":"Contato","item":"https://almusinagem.com.br/#contato"}
       ]
     }
   ]

@@ -2,19 +2,25 @@
   "schema_version": "v0",
   "name_for_ai": "ALM Soluções Usinagens",
   "name_for_human": "ALM Soluções Usinagens",
-  "description_for_ai": "Brazilian machining and motor reconditioning service provider. Specializes in aluminum and cast iron engine block recovery, piston turning, thread bush repair, specialized welding, axle rolling, and aluminum seals. Serves automotive repair shops across Brazil from Votorantim, SP.",
-  "description_for_human": "Especialistas em usinagem para retíficas de motores — recuperação de bloco, torneamento de pistão, soldas especializadas e mais. Atendemos todo o Brasil.",
+  "description_for_ai": "Brazilian B2B machining service provider specializing exclusively in engine reconditioning for automotive repair shops (retíficas de motores) across Brazil. Based in Votorantim, São Paulo. Services: aluminum and cast iron engine block recovery (soldagem TIG/MIG + precision machining), piston turning (taxa de pistão), thread bush repair (embuchamento de rosca em aço 1045 — permanent fix for damaged threads), specialized welding on aluminum/cast iron blocks and cylinder heads (cabeçotes), axle and crankshaft rolling (rolagem de eixo/virabrequim), aluminum seals and cylinder head washers made to measure, connecting rod canal mosca adaptation. Serves all Brazilian states via local pickup or freight carriers. Over 10 years in operation. No consumer-facing retail; exclusively serves automotive engine reconditioning shops.",
+  "description_for_human": "Especialistas em usinagem para retíficas de motores — recuperação de bloco de alumínio e ferro fundido, torneamento de pistão, embuchamento de rosca, soldas especializadas, rolagem de eixos, selos de alumínio. Atendemos todo o Brasil há mais de 10 anos.",
   "legal_info_url": "https://almusinagem.com.br",
   "contact": {
     "email": "Suporte.almusinagem@gmail.com",
     "phone": "+55 15 99656-6562",
-    "whatsapp": "https://wa.me/5515996566562"
+    "whatsapp": "https://wa.me/5515996566562",
+    "instagram": "https://www.instagram.com/almusinagem"
   },
   "location": {
     "country": "BR",
     "state": "SP",
     "city": "Votorantim",
-    "address": "Estr. Oswaldo Pires de Camargo, 523, Capoavinha, Votorantim – SP, 18117-803"
+    "region": "Sorocaba",
+    "address": "Estr. Oswaldo Pires de Camargo, 523, Capoavinha, Votorantim – SP, 18117-803",
+    "coordinates": {
+      "lat": -23.5482,
+      "lng": -47.4412
+    }
   },
   "api": {
     "type": "none"
@@ -25,16 +31,215 @@
   "capabilities": [
     "quote_request",
     "service_inquiry",
-    "contact"
+    "contact",
+    "shipping_inquiry"
   ],
+  "target_audience": [
+    "retíficas de motores",
+    "oficinas mecânicas especializadas",
+    "mecânicas automotivas",
+    "fornecedores de peças automotivas"
+  ],
+  "service_area": {
+    "national": true,
+    "country": "BR",
+    "states_served": ["SP","PR","MG","RJ","SC","RS","GO","MS","BA","PE","CE","AM","PA","DF","MT","ES","PB","RN","AL","SE","PI","MA","TO","RO","AC","AP","RR"]
+  },
   "services": [
-    "Recuperação de Bloco de Alumínio",
-    "Recuperação de Bloco de Ferro Fundido",
-    "Torneamento de Pistão",
-    "Embuchamento de Rosca de Blocos",
-    "Soldas Especializadas",
-    "Rolagem de Eixos",
-    "Selos de Alumínio",
-    "Adaptações Gerais"
+    {
+      "id": "recuperacao-bloco-aluminio",
+      "name": "Recuperação de Bloco de Alumínio",
+      "name_en": "Aluminum Engine Block Recovery",
+      "description": "Recovery of damaged aluminum engine blocks using TIG/MIG welding and precision machining to restore original factory dimensions. Handles cracks, breaks, and excessive wear.",
+      "keywords_pt": [
+        "recuperação de bloco de alumínio",
+        "solda em bloco de alumínio",
+        "usinagem bloco alumínio",
+        "bloco motor alumínio trincado",
+        "reparo bloco alumínio motor",
+        "soldagem TIG alumínio bloco",
+        "bloco de alumínio quebrado recuperação"
+      ]
+    },
+    {
+      "id": "recuperacao-bloco-ferro-fundido",
+      "name": "Recuperação de Bloco de Ferro Fundido",
+      "name_en": "Cast Iron Engine Block Recovery",
+      "description": "Complete restoration of cast iron engine blocks. High-precision techniques for cracked, broken, or excessively worn blocks. Factory original dimensions guaranteed.",
+      "keywords_pt": [
+        "recuperação de bloco de ferro fundido",
+        "solda ferro fundido motor",
+        "usinagem bloco ferro fundido",
+        "reparo bloco ferro fundido",
+        "soldagem ferro fundido bloco"
+      ]
+    },
+    {
+      "id": "torneamento-pistao",
+      "name": "Torneamento de Pistão",
+      "name_en": "Piston Turning / Piston Machining",
+      "description": "Precision lathe machining of piston compression rate (taxa de pistão). Maintains original manufacturer tolerances for perfect sealing and engine performance. Covers gasoline, ethanol, flex, and diesel engines.",
+      "keywords_pt": [
+        "torneamento de pistão",
+        "usinagem de pistão",
+        "taxa de pistão",
+        "pistão retificado",
+        "torneamento taxa pistão",
+        "usinagem pistão diesel",
+        "retificação de pistão"
+      ]
+    },
+    {
+      "id": "embuchamento-rosca",
+      "name": "Embuchamento de Rosca de Blocos",
+      "name_en": "Thread Bush Repair / Thread Insert Installation",
+      "description": "Permanent repair of damaged, stripped, or cross-threaded holes in engine blocks. Installs AISI 1045 steel threaded bushings for strength superior to original material. Definitive solution vs. helicoils.",
+      "keywords_pt": [
+        "embuchamento de rosca",
+        "bucha roscada bloco",
+        "reparo rosca bloco motor",
+        "rosca danificada bloco",
+        "bucha de rosca aço 1045",
+        "rosca arrancada bloco motor",
+        "reparo definitivo rosca motor",
+        "helicoil alternativa bloco"
+      ]
+    },
+    {
+      "id": "soldas-especializadas",
+      "name": "Soldas Especializadas em Blocos e Cabeçotes",
+      "name_en": "Specialized Welding — Engine Blocks and Cylinder Heads",
+      "description": "Recovery welding on aluminum blocks, cast iron blocks, and cylinder heads. Professional TIG, MIG, and coated electrode equipment. Handles cracks, breaks, holes, and wear anywhere on the block or head.",
+      "keywords_pt": [
+        "solda bloco motor",
+        "solda cabeçote",
+        "soldagem alumínio motor",
+        "solda ferro fundido motor",
+        "recuperação bloco solda",
+        "soldagem especializada motor",
+        "solda TIG motor",
+        "reparo cabeçote trincado solda"
+      ]
+    },
+    {
+      "id": "rolagem-eixos",
+      "name": "Rolagem de Eixos e Virabrequins",
+      "name_en": "Crankshaft and Axle Rolling",
+      "description": "Geometric and dimensional restoration of axles and crankshafts. Rolling process recovers surface hardness and roughness of crankshaft journals, extending engine life and eliminating excessive wear.",
+      "keywords_pt": [
+        "rolagem de eixo",
+        "rolagem de virabrequim",
+        "usinagem virabrequim",
+        "recuperação de eixo motor",
+        "rolagem eixo motor",
+        "virabrequim rolado",
+        "munhão virabrequim recuperação"
+      ]
+    },
+    {
+      "id": "selos-aluminio",
+      "name": "Selos de Alumínio e Arruelas de Cabeçote",
+      "name_en": "Aluminum Seals and Custom Cylinder Head Washers",
+      "description": "Custom-made aluminum seals and cylinder head washers. Produces personalized aluminum parts for engine sealing. Ideal for discontinued parts, hard-to-find imports, or custom specifications.",
+      "keywords_pt": [
+        "selos de alumínio motor",
+        "arruelas de cabeçote",
+        "selos sob medida",
+        "vedação motor alumínio",
+        "arruela cabeçote sob medida",
+        "selos alumínio personalizados",
+        "peças alumínio motor sob medida"
+      ]
+    },
+    {
+      "id": "adaptacoes-gerais",
+      "name": "Adaptações Gerais e Canal Mosca de Biela",
+      "name_en": "General Adaptations and Connecting Rod Canal Mosca",
+      "description": "Custom technical adaptations: canal mosca de biela (connecting rod oil gallery machining), special cylinder head washers, and various mechanical adaptations. Handles specific demands requiring custom machining solutions.",
+      "keywords_pt": [
+        "canal mosca de biela",
+        "adaptações de motor",
+        "usinagem personalizada",
+        "biela motor adaptação",
+        "canal mosca biela usinagem",
+        "adaptações mecânicas motor"
+      ]
+    }
+  ],
+  "niche_keywords": {
+    "primary": [
+      "usinagem para retífica",
+      "usinagem para retífica de motores",
+      "usinagem automotiva",
+      "usinagem de motores",
+      "serviços de usinagem para retífica"
+    ],
+    "secondary": [
+      "recuperação de bloco de motor",
+      "recuperação de bloco de alumínio",
+      "recuperação de bloco de ferro fundido",
+      "torneamento de pistão",
+      "embuchamento de rosca bloco",
+      "soldas especializadas motor",
+      "rolagem de virabrequim",
+      "selos de alumínio motor"
+    ],
+    "long_tail": [
+      "usinagem para retífica SP",
+      "usinagem para retífica São Paulo",
+      "usinagem para retífica interior SP",
+      "usinagem para retífica todo Brasil",
+      "fornecedor usinagem retífica de motor",
+      "terceirização usinagem para retífica",
+      "recuperação bloco alumínio trincado",
+      "bucha roscada aço 1045 bloco motor",
+      "rosca arrancada bloco motor reparo",
+      "torneamento pistão diesel",
+      "rolagem eixo virabrequim recuperação",
+      "selos alumínio motor sob medida",
+      "adaptações usinagem motor retífica",
+      "bloco motor alumínio recuperação Votorantim",
+      "usinagem motor Votorantim SP",
+      "usinagem retífica Sorocaba",
+      "usinagem retífica interior paulista"
+    ],
+    "semantic": [
+      "recondicionamento de motor",
+      "retífica de motor automotivo",
+      "reparo de motor",
+      "restauração de motor",
+      "mecânica de motor",
+      "usinagem de precisão automotiva",
+      "manutenção de motor combustão interna",
+      "peças usinagem motor",
+      "serviços especializados motor automotivo"
+    ]
+  },
+  "brands_served": [
+    "Audi","BMW","Mercedes-Benz","Volkswagen","Porsche",
+    "Toyota","Honda","Nissan","Mitsubishi","Subaru","Suzuki",
+    "Hyundai","Kia",
+    "Fiat","Alfa Romeo",
+    "Chevrolet","Ford","Jeep","RAM","Dodge","Chrysler",
+    "Renault","Peugeot","Citroën",
+    "Land Rover","Jaguar","Mini","Volvo",
+    "Iveco","MAN","Scania","DAF",
+    "Mahindra","Chery","JAC","Caoa Chery","GWM","BYD"
+  ],
+  "vehicle_types": [
+    "passenger cars",
+    "SUVs",
+    "light commercial vehicles",
+    "pickup trucks",
+    "vans",
+    "trucks",
+    "heavy vehicles"
+  ],
+  "fuel_types_served": [
+    "gasoline",
+    "ethanol",
+    "flex",
+    "diesel",
+    "bi-fuel CNG/gasoline"
   ]
 }
