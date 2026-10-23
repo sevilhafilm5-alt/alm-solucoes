@@ -44,4 +44,33 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- Dedicated service pages — #1 local organic ranking factor -->
+  <url>
+    <loc>https://almusinagem.com.br/servicos/usinagem-para-reifica-de-motores/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://almusinagem.com.br/servicos/usinagem-para-reifica-de-motores/"/>
+  </url>
+  <url>
+    <loc>https://almusinagem.com.br/servicos/recuperacao-bloco-aluminio/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://almusinagem.com.br/servicos/recuperacao-bloco-aluminio/"/>
+  </url>
+  <url>
+    <loc>https://almusinagem.com.br/servicos/torneamento-pistao/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://almusinagem.com.br/servicos/torneamento-pistao/"/>
+  </url>
+  <url>
+    <loc>https://almusinagem.com.br/servicos/embuchamento-rosca-bloco-motor/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://almusinagem.com.br/servicos/embuchamento-rosca-bloco-motor/"/>
+  </url>
 </urlset>

@@ -19,14 +19,35 @@ Allow: /
 User-agent: DuckDuckBot
 Allow: /
 
-# Allow AI crawlers for Answer Engine Optimization
+# --- AI SEARCH CRAWLERS (citability in AI search results) ---
+# ChatGPT Search (OAI-SearchBot = search crawler, not GPTBot which is training only)
+User-agent: OAI-SearchBot
+Allow: /
+
+# Claude search (Claude-SearchBot = search crawler, not ClaudeBot which is training only)
+User-agent: Claude-SearchBot
+Allow: /
+
+# Perplexity search
+User-agent: PerplexityBot
+Allow: /
+
+# Bing Copilot / Microsoft
+User-agent: Bingbot
+Allow: /
+
+# Google AI Overviews / Gemini grounding (Google-Extended = Gemini training+grounding, Googlebot = AI Overviews)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# --- AI TRAINING CRAWLERS (allow for brand presence in AI models) ---
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
-Allow: /
-
-User-agent: PerplexityBot
 Allow: /
 
 User-agent: ClaudeBot
@@ -39,6 +60,12 @@ User-agent: CCBot
 Allow: /
 
 User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: cohere-ai
 Allow: /
 
 # Sitemap location
