@@ -1,3 +1,30 @@
+# ── Força HTTPS e canonical sem-www ──────────────────────────────────────────
+[[redirects]]
+  from = "http://almusinagem.com.br/*"
+  to = "https://almusinagem.com.br/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.almusinagem.com.br/*"
+  to = "https://almusinagem.com.br/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.almusinagem.com.br/*"
+  to = "https://almusinagem.com.br/:splat"
+  status = 301
+  force = true
+
+# Netlify preview / alm-solucoes.netlify.app → domínio canônico
+[[redirects]]
+  from = "https://alm-solucoes.netlify.app/*"
+  to = "https://almusinagem.com.br/:splat"
+  status = 301
+  force = true
+
+# ── SPA fallback (deve ser o último redirect) ─────────────────────────────────
 [[redirects]]
   from = "/*"
   to = "/index.html"
@@ -59,3 +86,9 @@
   for = "/index.html"
   [headers.values]
     Cache-Control = "public, max-age=3600, must-revalidate"
+
+[[headers]]
+  for = "/servicos/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+    Content-Type = "text/html; charset=utf-8"
