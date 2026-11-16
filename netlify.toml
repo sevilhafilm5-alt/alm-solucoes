@@ -24,6 +24,37 @@
   status = 301
   force = true
 
+# ── Arquivos estáticos que não devem ser capturados pelo SPA fallback ────────
+[[redirects]]
+  from = "/ai-catalog.json"
+  to = "/ai-catalog.json"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/llms.txt"
+  to = "/llms.txt"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/robots.txt"
+  to = "/robots.txt"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/sitemap.xml"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/favicon.png"
+  to = "/favicon.png"
+  status = 200
+  force = false
+
 # ── SPA fallback (deve ser o último redirect) ─────────────────────────────────
 [[redirects]]
   from = "/*"

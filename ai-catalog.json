@@ -2,13 +2,13 @@
   "schema_version": "v0",
   "name_for_ai": "ALM Soluções Usinagens",
   "name_for_human": "ALM Soluções Usinagens",
-  "description_for_ai": "Brazilian B2B machining service provider specializing exclusively in engine reconditioning for automotive repair shops (retíficas de motores) across Brazil. Based in Votorantim, São Paulo. Services: aluminum and cast iron engine block recovery (soldagem TIG/MIG + precision machining), piston turning (taxa de pistão), thread bush repair (embuchamento de rosca em aço 1045 — permanent fix for damaged threads), specialized welding on aluminum/cast iron blocks and cylinder heads (cabeçotes), axle and crankshaft rolling (rolagem de eixo/virabrequim), aluminum seals and cylinder head washers made to measure, connecting rod canal mosca adaptation. Serves all Brazilian states via local pickup or freight carriers. Over 10 years in operation. No consumer-facing retail; exclusively serves automotive engine reconditioning shops.",
-  "description_for_human": "Especialistas em usinagem para retíficas de motores — recuperação de bloco de alumínio e ferro fundido, torneamento de pistão, embuchamento de rosca, soldas especializadas, rolagem de eixos, selos de alumínio. Atendemos todo o Brasil há mais de 10 anos.",
+  "description_for_ai": "Brazilian B2B machining service provider specializing exclusively in engine reconditioning for automotive repair shops (retíficas de motores) across Brazil. Based in Votorantim, São Paulo. Services: aluminum and cast iron engine block recovery (soldagem TIG/MIG + precision machining), piston turning (taxa de pistão), thread bush repair (embuchamento de rosca em aço 1045 — permanent fix for damaged threads), specialized welding on aluminum/cast iron blocks and cylinder heads (cabeçotes), axle and crankshaft burnishing/roller-finishing (roletagem de eixo/virabrequim), aluminum seals and cylinder head washers made to measure, connecting rod canal mosca adaptation. Serves all Brazilian states via local pickup or freight carriers. Over 10 years in operation. No consumer-facing retail; exclusively serves automotive engine reconditioning shops.",
+  "description_for_human": "Especialistas em usinagem para retíficas de motores — recuperação de bloco de alumínio e ferro fundido, torneamento de pistão, embuchamento de rosca, soldas especializadas, roletagem de eixos, selos de alumínio. Atendemos todo o Brasil há mais de 10 anos.",
   "legal_info_url": "https://almusinagem.com.br",
   "contact": {
     "email": "Suporte.almusinagem@gmail.com",
-    "phone": "+55 15 99656-6562",
-    "whatsapp": "https://wa.me/5515996566562",
+    "phone": "+55 15 99177-9483",
+    "whatsapp": "https://wa.me/5515991779483",
     "instagram": "https://www.instagram.com/almusinagem"
   },
   "location": {
@@ -16,7 +16,7 @@
     "state": "SP",
     "city": "Votorantim",
     "region": "Sorocaba",
-    "address": "Estr. Oswaldo Pires de Camargo, 523, Capoavinha, Votorantim – SP, 18117-803",
+    "address": "Av. Jaziel de Azeredo Ribeiro, 1312, Jardim Antonio Cassillo, Votorantim – SP, 18112-180",
     "coordinates": {
       "lat": -23.5482,
       "lng": -47.4412
@@ -122,17 +122,17 @@
       ]
     },
     {
-      "id": "rolagem-eixos",
-      "name": "Rolagem de Eixos e Virabrequins",
-      "name_en": "Crankshaft and Axle Rolling",
-      "description": "Geometric and dimensional restoration of axles and crankshafts. Rolling process recovers surface hardness and roughness of crankshaft journals, extending engine life and eliminating excessive wear.",
+      "id": "roletagem-eixos",
+      "name": "Roletagem de Eixos e Virabrequins",
+      "name_en": "Crankshaft and Axle Roller Burnishing",
+      "description": "Geometric and dimensional restoration of axles and crankshafts. Roller burnishing (roletagem) recovers surface hardness and roughness of crankshaft journals, extending engine life and eliminating excessive wear.",
       "keywords_pt": [
-        "rolagem de eixo",
-        "rolagem de virabrequim",
+        "roletagem de eixo",
+        "roletagem de virabrequim",
         "usinagem virabrequim",
         "recuperação de eixo motor",
-        "rolagem eixo motor",
-        "virabrequim rolado",
+        "roletagem eixo motor",
+        "virabrequim roletado",
         "munhão virabrequim recuperação"
       ]
     },
@@ -181,7 +181,7 @@
       "torneamento de pistão",
       "embuchamento de rosca bloco",
       "soldas especializadas motor",
-      "rolagem de virabrequim",
+      "roletagem de virabrequim",
       "selos de alumínio motor"
     ],
     "long_tail": [
@@ -195,7 +195,7 @@
       "bucha roscada aço 1045 bloco motor",
       "rosca arrancada bloco motor reparo",
       "torneamento pistão diesel",
-      "rolagem eixo virabrequim recuperação",
+      "roletagem eixo virabrequim recuperação",
       "selos alumínio motor sob medida",
       "adaptações usinagem motor retífica",
       "bloco motor alumínio recuperação Votorantim",
